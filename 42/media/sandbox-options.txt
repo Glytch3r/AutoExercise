@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option AutoFitness.ShowExtraInfo
+{
+	type = boolean, default = false,
+	page = AutoFitness, translation = AutoFitness_ShowExtraInfo,
+}
+option AutoFitness.EnduranceLevelTreshold
+{
+	type = integer, min = 0, max = 10, default = 0,
+	page = AutoFitness, translation = AutoFitness_EnduranceLevelTreshold,
+}
+
+option AutoFitness.KeepContainerItems
+{
+	type = boolean, default = true,
+	page = AutoFitness, translation = AutoFitness_KeepContainerItems,
+}
+
+option AutoFitness.HideContextmenu
+{
+	type = boolean, default = false,
+	page = AutoFitness, translation = AutoFitness_HideContextmenu,
+}
+

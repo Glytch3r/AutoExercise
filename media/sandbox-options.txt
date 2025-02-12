@@ -1,0 +1,21 @@
+VERSION = 1,
+
+option AutoFitness.CheckStiffnessTimer
+{
+	type = boolean, default = false,
+	page = AutoFitness, translation = AutoFitness_CheckStiffnessTimer,
+}
+
+
+option AutoFitness.ShowMuscleStiffness
+{
+	type = boolean, default = false,
+	page = AutoFitness, translation = AutoFitness_ShowMuscleStiffness,
+}
+
+
+option AutoFitness.EnduranceLevelTreshold
+{
+	type = integer, min = 0, max = 10, default = 0,
+	page = AutoFitness, translation = AutoFitness_EnduranceLevelTreshold,
+}
