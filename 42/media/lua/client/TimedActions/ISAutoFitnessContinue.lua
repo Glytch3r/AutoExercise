@@ -16,6 +16,19 @@ end
 function ISAutoFitnessContinue:update()
 end
 
+function ISAutoFitnessContinue:waitToStart()
+	if self.character:isAiming() then
+		self.character:nullifyAiming()
+	end
+	if self.isAutoRepeat and self.character:isCurrentState(IdleState.instance()) or  self.character:isCurrentState(PlayerSitOnGroundState.instance()) then
+	--or  self.character:isCurrentState(PlayerSitOnGroundState.instance())) then
+		return false
+    else
+        return true
+
+	end
+end
+
 function ISAutoFitnessContinue:start()
     self.character:setVariable("sitonground", false)
 end

@@ -7,7 +7,7 @@ option AutoFitness.ShowExtraInfo
 }
 option AutoFitness.EnduranceLevelTreshold
 {
-	type = integer, min = 0, max = 10, default = 0,
+	type = integer, min = 0, max = 10, default = 2,
 	page = AutoFitness, translation = AutoFitness_EnduranceLevelTreshold,
 }
 
@@ -23,3 +23,14 @@ option AutoFitness.HideContextmenu
 	page = AutoFitness, translation = AutoFitness_HideContextmenu,
 }
 
+option AutoFitness.ActionDuration
+{
+	type = integer, min = 0, max = 50000000, default = 5000000,
+	page = AutoFitness, translation = AutoFitness_ActionDuration,
+}
+
+option AutoFitness.CaloriesModifier
+{
+	type = integer, min = 0, max = 25, default = 3,
+	page = AutoFitness, translation = AutoFitness_CaloriesModifier,
+}
